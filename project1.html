@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h>, initial-scale=1.0">
+    <title>Chickpeas</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #9f968f;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            background-image: unset;
+            
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-size: 38px;
+            border: 1px solid #ddcb94; 
+            border-radius: 12px;
+            border-width: 6px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 12px;
+            color: #8c6d0f;
+            font-weight: lighter;
+            font-family: cursive;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            border-radius: 4px;
+        }
+
+        p {
+            line-height: 1.3;
+            font-size: 13px;
+            margin: 10px 0 8px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            margin-block-end: 15px;
+
+        }
+
+          .body-content {
+            max-width: 550px;
+            margin: 0 auto;
+            background:linear-gradient(110deg, rgb(244, 232, 255), rgb(230, 209, 249) 70%, rgb(210, 170, 247));
+            padding: 70px;
+        }
+
+        .facts {
+            margin: 5px 0 0 0 0;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            color: #8c6d0f;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+           
+        }
+
+        .facts:hover {
+            color: #9b5ac9;
+            background-color: #f1c53e;
+            opacity: 0.5;
+            background-blend-mode: soft-light;
+
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background: #6dd166;
+            color: #ffffff;
+            font-size: 28px;
+            padding: 12px 8px;
+            border: 0.2rem outset #f3d141;
+            border-radius: 18px;
+            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+            transition: all 150ms ease-in-out;
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .builder {
+            text-align: center;
+            color: #000000;
+            margin-top: 30px;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="body-content">
+    <h1>
+        Tasty Legumes
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmHxzMI0cAw0RApTRq2ARG2JQSm9TNeOLttRtPvqTL85cJTsuv&usqp=CAU">
+    </h1>
+    <h2>
+        <em>hello</em> <strong>CHICKPEAS</strong>
+    </h2>
+   
+    <img src="https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_600,q_auto:best,w_800/v1547600824/cms_recipe_featured_image/ntljtrq7rhkvh9tdftks.jpg" alt="chickpea"
+ <hr>
+    <p>
+        Several varieties of chickpea are cultivated throughout the world. 
+       <br />
+        Desi chana closely resembles both seeds found on
+        archaeological sites and the wild plant ancestor of domesticated chickpeas, Cicer reticulatum, which only grows in
+        southeast Turkey, where chickpeas are believed to have originated.
+    </p>
+    
+
+    <p><span>
+        <a href="https://en.wikipedia.org/wiki/Chickpea#:~:text=Several%20varieties%20of%20chickpea%20are,are%20believed%20to%20have%20originated." 
+            target="_blank" 
+            class="facts"
+            >
+            View History Source 
+         </a>
+    </span></p>
+   
+    <button class="food-button">
+        👩‍🍳 Recipes!
+    </button>
+    <hr>
+    <h3>
+        <small>thank you for visiting ☺️</small>
+    </h3>
+    <p>
+    <div class="builder">
+        This page was built by
+        <a href="https://www.linkedin.com/in/katie-layton-90426059/" target="_blank">
+            👩‍💻 Katie Layton
+        </a>
+    </p>
+    </div>
+    <script>
+
+        alert("Hi! Welcome to the world of tasty legumes!")
+
+        function cook() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let question = prompt("10 being best! On a scale of 1-10, how much to you love CHICKPEAS?");
+            let heading = document.querySelector("h1");
+            if (question >= 6) {
+                heading.innerHTML = "😻 " + name + ", we emailed you tons of yummy recipes!";
+            } else {
+                heading.innerHTML =
+                    "😿 " + name + ", we sent you a list of recipes that might change your mind.";
+
+            }
+            
+        }
+        let foodButton = document.querySelector(".food-button");
+        foodButton.addEventListener("click", cook);
+    </script>
+</body>
+</html> 
